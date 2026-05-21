@@ -1,0 +1,77 @@
+body{
+
+  margin: 0;
+
+  background-color: #111111;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-custom{
+
+  background-color: #1c1c1c;
+
+  padding: 18px;
+}
+
+.navbar-brand{
+
+  color: white;
+}
+
+.nav-link-custom{
+
+  color: #cccccc;
+
+  text-decoration: none;
+
+  margin-left: 20px;
+}
+
+.nav-link-custom:hover{
+
+  color: white;
+}
+
+.painel-container{
+
+  padding-top: 80px;
+}
+
+.painel-container h1{
+
+  color: white;
+
+  margin-bottom: 50px;
+}
+
+.buttons-grid{
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+}
+
+.painel-btn{
+
+  height: 100px;
+
+  background-color: #c9072c;
+
+  color: white;
+
+  border-radius: 18px;
+
+  font-size: 24px;
+
+  border: none;
+}
+
+.painel-btn:hover{
+
+  background-color: #e00032;
+
+  color: white;
+}
