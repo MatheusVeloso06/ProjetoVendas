@@ -1,87 +1,80 @@
-body{
 
-  margin: 0;
+/* cadastro.css */
 
-  background-color: #111111;
-
-  font-family: Arial, Helvetica, sans-serif;
+body {
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
 }
 
-.cadastro-container{
+/* Navbar */
 
-  height: 100vh;
+.navbar-custom {
+  background-color: #1f2937;
+  padding: 15px 25px;
+}
 
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-link-custom {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.nav-link-custom:hover {
+  color: #38bdf8;
+}
+
+/* Container */
+
+.cadastro-container {
   display: flex;
-
   justify-content: center;
-
   align-items: center;
+  min-height: 85vh;
 }
 
-.cadastro-box{
+/* Card */
 
-  width: 450px;
-
-  background-color: #1c1c1c;
-
+.cadastro-card {
+  background: #ffffff;
   padding: 40px;
-
-  border-radius: 20px;
-}
-
-.cadastro-box h1{
-
-  color: white;
-
-  text-align: center;
-
-  margin-bottom: 35px;
-}
-
-.custom-input{
-
-  height: 55px;
-
-  margin-bottom: 20px;
-
-  border-radius: 12px;
-
-  background-color: #2a2a2a;
-
-  border: 1px solid #333;
-
-  color: white;
-}
-
-.custom-input:focus{
-
-  background-color: #2a2a2a;
-
-  color: white;
-
-  box-shadow: none;
-
-  border: 1px solid #c9072c;
-}
-
-.custom-btn{
-
+  border-radius: 16px;
   width: 100%;
-
-  height: 55px;
-
-  background-color: #c9072c;
-
-  color: white;
-
-  border-radius: 12px;
-
-  margin-top: 10px;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.custom-btn:hover{
+/* Inputs */
 
-  background-color: #e00032;
-
-  color: white;
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #d1d5db;
 }
+
+.form-control:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 0.2rem rgba(56, 189, 248, 0.25);
+}
+
+/* Botão */
+
+.cadastro-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #1f2937;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cadastro-btn:hover {
+  background-color: #111827;
+}
+```

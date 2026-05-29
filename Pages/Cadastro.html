@@ -1,3 +1,5 @@
+
+<!-- cadastro.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -20,35 +22,111 @@
 
 <body>
 
-  <div class="cadastro-container">
+  <nav class="navbar navbar-dark navbar-custom">
 
-    <div class="cadastro-box">
+    <div class="container-fluid">
 
-      <h1>
-        Criar Conta
+      <span class="navbar-brand">
+        Tela de Cadastro
+      </span>
+
+    </div>
+
+  </nav>
+
+  <div class="container cadastro-container">
+
+    <div class="cadastro-card">
+
+      <h1 class="mb-4">
+        Cadastro de Cliente
       </h1>
 
-      <input
-        type="text"
-        class="form-control custom-input"
-        placeholder="Nome completo"
-      >
+      <table class="table">
 
-      <input
-        type="email"
-        class="form-control custom-input"
-        placeholder="E-mail"
-      >
+        <tr>
 
-      <input
-        type="password"
-        class="form-control custom-input"
-        placeholder="Senha"
-      >
+          <td>
 
-      <a href="TelaHome.html" class="btn custom-btn">
-        Cadastrar
-      </a>
+            <form action="../php/InsertUsuario.php" method="POST">
+
+              <div class="mb-3">
+
+                <label class="form-label">
+                  Nome
+                </label>
+
+                <input
+                  type="text"
+                  name="NomeCompleto"
+                  class="form-control"
+                  placeholder="Digite o nome"
+                  required
+                >
+
+              </div>
+
+              <div class="mb-3">
+
+                <label class="form-label">
+                  Email
+                </label>
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Digite o email"
+                  required
+                >
+
+              </div>
+
+              <div class="mb-3">
+
+                <label class="form-label">
+                  Senha
+                </label>
+
+                <input
+                  type="text"
+                  name="Senha"
+                  class="form-control"
+                  placeholder="Digite a senha"
+                  required
+                >
+
+              </div>
+
+<div class="mb-3">
+
+                <label class="form-label">
+                  Confirmar Senha
+                </label>
+
+                <input
+                  type="text"
+                  name="ConfirmarSenha"
+                  class="form-control"
+                  placeholder="Digite a senha"
+                  required
+                >
+
+              </div>
+
+
+
+              <button type="submit" class="btn cadastro-btn">
+                Salvar Cadastro
+              </button>
+
+            </form>
+
+          </td>
+
+        </tr>
+
+      </table>
 
     </div>
 
